@@ -32,12 +32,13 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btn_tambahbarang" max="32767" attributes="0"/>
+                          <Component id="btn_transaksi" max="32767" attributes="0"/>
                           <Component id="btn_belibarang" max="32767" attributes="0"/>
+                          <Component id="btn_stok" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="104" max="32767" attributes="0"/>
+              <EmptySpace pref="114" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -49,8 +50,10 @@
               <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
               <Component id="btn_belibarang" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="btn_tambahbarang" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="127" max="32767" attributes="0"/>
+              <Component id="btn_stok" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btn_transaksi" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="86" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -61,7 +64,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Memu Utama"/>
+        <Property name="text" type="java.lang.String" value="Menu Utama"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn_belibarang">
@@ -72,12 +75,20 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_belibarangActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn_tambahbarang">
+    <Component class="javax.swing.JButton" name="btn_transaksi">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Penambahan Barang"/>
+        <Property name="text" type="java.lang.String" value="Transaksi"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_tambahbarangActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_transaksiActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_stok">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Stok Barang"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_stokActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

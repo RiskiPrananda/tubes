@@ -16,7 +16,7 @@ import java.util.Date;
 public class tanggal {
     public static String getTanggal(Date date) {
         String tanggal = "";
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         tanggal = dateFormat.format(date);
         return tanggal;
     }

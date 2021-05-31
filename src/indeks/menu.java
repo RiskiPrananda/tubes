@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tampilan;
+package indeks;
 
 /**
  *
@@ -29,12 +29,13 @@ public class menu extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         btn_belibarang = new javax.swing.JButton();
-        btn_tambahbarang = new javax.swing.JButton();
+        btn_transaksi = new javax.swing.JButton();
+        btn_stok = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel1.setText("Memu Utama");
+        jLabel1.setText("Menu Utama");
 
         btn_belibarang.setText("Pembelian Barang");
         btn_belibarang.addActionListener(new java.awt.event.ActionListener() {
@@ -43,10 +44,17 @@ public class menu extends javax.swing.JFrame {
             }
         });
 
-        btn_tambahbarang.setText("Penambahan Barang");
-        btn_tambahbarang.addActionListener(new java.awt.event.ActionListener() {
+        btn_transaksi.setText("Transaksi");
+        btn_transaksi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_tambahbarangActionPerformed(evt);
+                btn_transaksiActionPerformed(evt);
+            }
+        });
+
+        btn_stok.setText("Stok Barang");
+        btn_stok.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_stokActionPerformed(evt);
             }
         });
 
@@ -62,9 +70,10 @@ public class menu extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(133, 133, 133)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btn_tambahbarang, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btn_belibarang, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(104, Short.MAX_VALUE))
+                            .addComponent(btn_transaksi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn_belibarang, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn_stok, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -74,21 +83,29 @@ public class menu extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addComponent(btn_belibarang)
                 .addGap(18, 18, 18)
-                .addComponent(btn_tambahbarang)
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addComponent(btn_stok)
+                .addGap(18, 18, 18)
+                .addComponent(btn_transaksi)
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_tambahbarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tambahbarangActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_tambahbarangActionPerformed
+    private void btn_transaksiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_transaksiActionPerformed
+        new transaksi().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn_transaksiActionPerformed
 
     private void btn_belibarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_belibarangActionPerformed
         new beli().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btn_belibarangActionPerformed
+
+    private void btn_stokActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_stokActionPerformed
+        new stok().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn_stokActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,7 +144,8 @@ public class menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_belibarang;
-    private javax.swing.JButton btn_tambahbarang;
+    private javax.swing.JButton btn_stok;
+    private javax.swing.JButton btn_transaksi;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
